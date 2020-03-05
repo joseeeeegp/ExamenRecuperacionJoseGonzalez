@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/idBotonRegistrar"
+            android:layout_width="189dp"
+            android:layout_height="104dp"
+            android:layout_marginTop="24dp"
+            android:onClick="onClick"
+            android:text="Registrar"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <Button
+            android:id="@+id/idConsultaindividual"
+            android:layout_width="222dp"
+            android:layout_height="104dp"
+            android:layout_marginTop="24dp"
+            android:onClick="onClick"
+            android:text="Consultar Individual"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/idBotonRegistrar"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <Button
+            android:id="@+id/idBotonRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:onClick="onClick"
+            android:text="Consultar Lista Usando Recycler"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idBotonRegistrar" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="199dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginLeft="104dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="Clique para registrar "
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idBotonRecycler" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/idBotonUnoMas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:clickable="true"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/idBotonRecycler"
+            app:srcCompat="@drawable/unomas"
+            android:onClick="onClick"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="193dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="92dp"
+            android:layout_marginLeft="92dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="MENÚ"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
+
